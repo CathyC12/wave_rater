@@ -32,6 +32,33 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<script type="text/javascript">
+    function processLogin(){
+    alert("The processLogin function has been created");
+    var username = document.getElementById("user").value;
+    var password = document.getElementById("pass").value;
+
+
+    $.ajax({
+         url: './lib/processLogin.php',
+         type: 'post',
+         data: {username: username, password: password},
+       async: false,
+         success: function(data){
+         if(data == "Success"){
+           document.getElementById("loginStuff").style.display = "none";
+           document.getElementById("member").style.display = "inline";
+         }
+         else{
+           document.getElementById("loginStuff").style.display = "none";
+           document.getElementById("unknown").style.display = "inline";
+         }
+         },
+         cache: false
+    });
+  }
+</script>
+
 </head>
 
 <body id="page-top">
@@ -50,7 +77,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#login">Login</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#event">Events</a>
@@ -78,14 +105,35 @@
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="login">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">About us!</h2>
-                    <hr class="light">
-                    <p class="text-faded">We are a small team of computer science students who want to help you find the beach that suits your needs for watersports</p>
+                <div id="loginSection">
+                    <h2 class="section-heading text-center">Login</h2>
+                        <div class="col-lg-8 ">
+                            <label for="user">Username</label>
+                            <input type="text" id="user" placeholder="Username or Email" class="form-control">
+                            <label for="password">Password</label>
+                            <input id="password" type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                            <hr>
+                            <a onclick="processLogin();" class="page-scroll btn btn-default btn-xl sr-button text-center">Login</a>
+                        </div>  
+                        <div class="col-lg-4">
+                            <blockquote>
+                            <p> Login/ Register using facebook, Google or Twitter account.</p>
+                            <footer>Social Media Login Option</footer>
+                        </div>
                 </div>
+            </div><!-- end of row-->
+            <!--
+                The following two divs are for displaying the correct information after we query the database. We will
+                only show one of these based on the results coming from the interactions with the database...
+            -->
+         <div id="member" style="display:none;">
+                <h2 class="section-heading">Welcome to the site</h2>
+            </div>
+            <div id="unknown" style="display:none;">
+                <h2 class="section-heading">you are not a member</h2>
             </div>
         </div>
     </section>
