@@ -12,7 +12,13 @@
  * Date: 2016-05-20T17:17Z
  */
 
-(function( global, factory ) {
+(function( global, factor, $ ) {
+	
+	 $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    });
+  });
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
 		// For CommonJS and CommonJS-like environments where a proper `window`
