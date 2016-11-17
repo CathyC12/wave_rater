@@ -26,7 +26,12 @@
 
  .text-faded{color:rgba(255,255,255,.7)}
 
- section{padding:25px 0}
+ section{
+   padding:25px 0; 
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;}
 
  aside{padding:50px 0}
 

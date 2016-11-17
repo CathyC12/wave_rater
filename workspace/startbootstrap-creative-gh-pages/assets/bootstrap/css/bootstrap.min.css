@@ -1368,7 +1368,7 @@ img{
 .carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img{
     display:block;
     max-width:100%;
-    height:auto
+    height:auto;
     
 }
 .img-rounded{
@@ -1397,7 +1397,7 @@ hr{
     margin-top:20px;
     margin-bottom:20px;
     border:0;
-    border-top:1px solid #eee
+    border-top:1px solid #c0b6b6
     
 }
 .sr-only{
@@ -1478,7 +1478,7 @@ p{
 }
 @media (min-width:1200px){.lead{font-size:21px}}
 .small,small{
-    font-size:85%
+    font-size:85%;
     
 }
 .mark,mark{
@@ -1802,6 +1802,7 @@ pre code{
                 padding-left:15px;
                 padding-top: 5px;
                 text-align: center;
+                padding-bottom: 15px;
                 
             }
             .col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{
@@ -2426,7 +2427,8 @@ pre code{
                 margin-left:0
                 
             }}@media (min-width:1200px){.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{
-                float:left
+                float:left;
+                padding-bottom: 15px;
                 
             }
             .col-lg-12{
@@ -2863,7 +2865,6 @@ pre code{
             }
             .form-control{
                 display:block;
-                width:60%;
                 height:34px;
                 padding:6px 12px;
                 font-size:14px;
@@ -3213,7 +3214,7 @@ pre code{
                 @media (min-width:1200px){.form-inline .form-group{
                     display:inline-block;
                     margin-bottom:0;
-                    vertical-align:middle
+                    vertical-align:middle;
                     
                 }
                 .form-inline .form-control{
