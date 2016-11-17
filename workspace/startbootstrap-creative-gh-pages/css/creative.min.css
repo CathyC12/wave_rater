@@ -55,9 +55,9 @@
 
  @media (min-width:768px){.navbar-default{background-color:transparent;border-color:rgba(255,255,255,.3)}
 
- .navbar-default .navbar-header .navbar-brand{color:rgba(255,255,255,.7)}.
+ /*.navbar-default .navbar-header .navbar-brand{color:rgba(255,255,255,.7)}. */
 
- navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover{color:#fff}
+ navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover{color:#fff} 
 
  .navbar-default .nav>li>a,.navbar-default .nav>li>a:focus{color:rgba(255,255,255,.7)}
 
