@@ -171,11 +171,11 @@ table{
     padding:0;
 }/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print{*,:after,:before{
-    color:#000!important;
+    color:#000!important;  
     text-shadow:none!important;
     background:0 0!important;
     -webkit-box-shadow:none!important;
-    box-shadow:none!important;
+    box-shadow:none!important; 
 }
 a,a:visited{
     text-decoration:underline;
@@ -6923,4 +6923,5 @@ pre code{
                                                                 @media print{.hidden-print{
                                                                     display:none!important
                                                                     }}
+
 /*# sourceMappingURL=bootstrap.min.css.map */
