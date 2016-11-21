@@ -286,30 +286,3 @@
     border                  : 1px solid #33ccff;
 
 }
-
-.igoogle .fa{
-    color               : #BD3518;
-    border              :2px solid #BD3518;
-}
-
-.igoogle .fa:hover{
-    
-    background-color        : #BD3518;    
-    color                   : #fff;
-    border                  : 1px solid #BD3518;
-
-}
-
-.iLinkedin .fa{
-    color               : #007bb7;
-    border              :2px solid #007bb7;
-}
-
-.iLinkedin .fa:hover{
-    
-    background-color        :#007bb7;    
-    color                   : #fff;
-    border                  : 1px solid #007bb7;
-
-}
-
