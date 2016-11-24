@@ -50,12 +50,12 @@
 <script type="text/javascript">
     function processLogin(){
     alert("The processLogin function has been created");
-    var username = document.getElementById("user").value;
-    var password = document.getElementById("pass").value;
+    var username = document.getElementById("uname").value;
+    var password = document.getElementById("upass").value;
 
 
     $.ajax({
-         url: './lib/processLogin.php',
+         url: './library/processLogin.php',
          type: 'post',
          data: {username: username, password: password},
        async: false,
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" action="" method="post" class="login-form" name="formLogin" onsubmit="return validationForm();">
+                                    <form role="form" action="" method="post" class="login-form" name="formLogin">
                                     <div id="errorBox"></div>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-username">Username</label>
@@ -149,7 +149,7 @@
                                             <label class="sr-only" for="password">Password</label>
                                             <input type="password" name="upass" placeholder="Password..." class="form-password form-control" id="upass">
                                         </div>
-                                        <button  type="submit" class="btn" value="Submit" name="submit" >Sign in!</button>
+                                        <button  type="submit" class="btn" value="Submit" name="submit" onclick="processLogin()" >Sign in!</button>
                                     </form>
                                 </div>
                             </div>
@@ -167,6 +167,16 @@
                                     </a>
                                 </div>
                             </div>
+                            <!--
+                The following two divs are for displaying the correct information after we query the database. We will
+                only show one of these based on the results coming from the interactions with the database...
+            -->
+            <div id="member" style="display:none;">
+                <h2 class="section-heading">Welcome to the site</h2>
+            </div>
+            <div id="unknown" style="display:none;">
+                <h2 class="alert alert-info">you are not a member</h2>
+            </div>
                         </div>
                            
                         <div class="col-sm-1 middle-border"></div>

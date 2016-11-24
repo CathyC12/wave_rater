@@ -5,6 +5,6 @@
 */
     $dbname = "DataBase Name";
   	$hostname = " Name of the Host ";
-  	$username = "Username that you are connecting with";
-  	$password = "The Password that authenticates the above username";
+  	$uname = "Username that you are connecting with";
+  	$upass = "The Password that authenticates the above username";
 ?>

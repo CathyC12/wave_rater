@@ -12,8 +12,8 @@ include 'config.php';
 
 	This allows us to create some variables with the information that the user sent.
 */
-$user = $_POST['username'];
-$pass = $_POST['password'];
+$uname = $_POST['username'];
+$upass = $_POST['password'];
 
 /*
 	The next snippet of code is using the variables defined within the config.php file and making a secure connection
@@ -21,7 +21,7 @@ $pass = $_POST['password'];
 	connection. If an error occurs we print out the details below and the thread of executing is stopped.
 
 */
-@ $db = new mysqli("$hostname", "$username", "$password", "$dbname");
+@ $db = new mysqli("$hostname", "$uname", "$upass", "$dbname");
 if (mysqli_connect_errno()) {
 	echo 'Error: Could not connect to database.  Please try again later.';
 	exit;
@@ -32,7 +32,7 @@ if (mysqli_connect_errno()) {
 	created connection. Remember as discussed today you should test these queries in Workbench to determine if
 	you are getting the required results prior to trying to figure what is happening with PHP.
 */
-$q1 = "SELECT idusers FROM testDB.users where username='$user' && password='$pass'";
+$q1 = "SELECT idusers FROM testDB.users where username='$uname' && password='$upass'";
 $result = $db->query($q1);
 
 if(!mysqli_fetch_row($result)){
