@@ -29,11 +29,11 @@
     <link rel="stylesheet" href="css/imghover.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/logoicon16.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/logoicon144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/logoicon114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/logoicon72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/logoicon57.png">
     
     
     <!-- jQuery -->
@@ -50,12 +50,12 @@
 <script type="text/javascript">
     function processLogin(){
     alert("The processLogin function has been created");
-    var username = document.getElementById("user").value;
-    var password = document.getElementById("pass").value;
+    var username = document.getElementById("uname").value;
+    var password = document.getElementById("upass").value;
 
 
     $.ajax({
-         url: './lib/processLogin.php',
+         url: './library/processLogin.php',
          type: 'post',
          data: {username: username, password: password},
        async: false,
@@ -112,7 +112,6 @@
     </nav>
 
     <header>
-        <!--Alice added 24/11/2016-->
         <div class="header-content">
             <div class="jumbotron" style="opacity:0.6; filter: alpha(opacity=60); border-radius:25px; border:2px solid #4169E1; padding:20px;">
                     <div class="container">
@@ -140,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" action="" method="post" class="login-form" name="formLogin" onsubmit="return validationForm();">
+                                    <form role="form" action="" method="post" class="login-form" name="formLogin" >
                                     <div id="errorBox"></div>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-username">Username</label>
@@ -150,7 +149,7 @@
                                             <label class="sr-only" for="password">Password</label>
                                             <input type="password" name="upass" placeholder="Password..." class="form-password form-control" id="upass">
                                         </div>
-                                        <button  type="submit" class="btn" value="Submit" name="submit" >Sign in!</button>
+                                        <button  type="submit" class="btn" value="Submit" name="submit" onclick="processLogin()" >Sign in!</button>
                                     </form>
                                 </div>
                             </div>
@@ -168,6 +167,16 @@
                                     </a>
                                 </div>
                             </div>
+                            <!--
+                The following two divs are for displaying the correct information after we query the database. We will
+                only show one of these based on the results coming from the interactions with the database...
+            -->
+            <div id="member" style="display:none;">
+                <h2 class="section-heading">Welcome to the site</h2>
+            </div>
+            <div id="unknown" style="display:none;">
+                <h2 class="alert alert-info">you are not a member</h2>
+            </div>
                         </div>
                            
                         <div class="col-sm-1 middle-border"></div>
@@ -247,13 +256,14 @@
                                     <li class="span3">
                                        <div class ="row">
                                         <div align = "left" class="col-lg-4">
-                                            <a href="#"><img src="https://placehold.it/360x240" alt=""></a>
+                                            <a href="http://seasessions.com/"><img src="./img/event1.png" sizes="260x140" alt="SeaSession.com"></a>
                                         </div>
-                                        <div class="caption">
-                                            <h4>Praesent commodo</h4>
-                                            <p>Nullam Condimentum Nibh Etiam Sem</p>
-                                            <a class="btn btn-mini" href="#">&raquo; Read More</a>
-                                        </div>
+                                            <div class="caption">
+                                                <h4>SeaSession </h4>
+                                                <p><strong>Sea Sessions is one of Ireland’s most highly respected small festivals and is widely recognised as being the country’s premier music, camping and surfing lifestyle event.</strong></p>
+                                                <p>The Festival sells out to capacity crowds each year and continues to grow in popularity. In 2016 the festival sold out over 3 weeks in advance. Sea Sessions has played host to such luminaries as Paul Weller, Tinie Tempah, Bastille, Seasick Steve, Example and Gavin James to name but a few.</p>
+                                                <a class="btn btn-mini" href="http://seasessions.com/">&raquo; Click for tickets</a>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="span3">
@@ -461,6 +471,8 @@
               	      
 
             </div>
+            
+            
         </div>
     
        </section>
