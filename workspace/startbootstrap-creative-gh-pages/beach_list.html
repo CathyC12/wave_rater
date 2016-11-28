@@ -54,6 +54,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  <!--Alice-->
 
+
+
 </head>
 
 <!--<body> -->
@@ -151,6 +153,9 @@
                         <!--<h4 class="pull-right">$24.99</h4>-->
                         <h4><a href="#">Lahinch Beach County Clare</a>
                         </h4>
+                        <div id="weather"></div>
+                        <p>Current Temp: <span id="temp"></span></p>
+                        <p>Current Wind: <span id="wind"></span></p>
                         <p>Address: Ennistymon Rd, Dough, Lahinch, Co. Clare</p>
                         <p>Lahinch Beach is located a short drive from the Cliffs of Moher and is therefore very popular with locals and tourists alike. The flooding tide makes it ideal for surfing, sea kayaking and kite surfing and there are a few surfing schools in the local area. Lahinch is a popular resort town with many restaurants and accommodation. </p>
                         <p>The beach is lifeguarded during the bathing season and more information can be found on the noticeboard located at the beach.</p>
@@ -167,14 +172,17 @@
                             4.0 stars
                         </p>
                     </div>
-                </div>
+                <!--</div>
                 <!--Added divs-->
-                </div>
+                <!--</div>
                 
 
 
 <!--Alice-->
-<div class="container">
+            <div class="col-md-9">
+
+                <div class="thumbnail">
+    
 	<div css="row" style="margin-top:20px;">
 		<div class="col-md-9">
     	<div class="well well-sm">
@@ -183,7 +191,7 @@
             </div>
         
             <div class="row" id="post-review-box" style="display:none;">
-                <div class="col-md-12">
+                <!--<div class="col-md-12">-->
                     <form accept-charset="UTF-8" action="" method="post">
                         <input id="ratings-hidden" name="rating" type="hidden"> 
                         <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
@@ -202,7 +210,8 @@
 		</div>
 	</div>
 </div>                
-                
+         </div>
+         </div>
                 
                
                 
@@ -310,6 +319,26 @@
             </div>
         </div>
     </section>
+    
+    <script>
+                        var weather = new XMLHttpRequest();
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/CA/Los_angeles.json", false);
+                        weather.send(null);
+
+                        var r = JSON.parse(weather.response);
+
+                        var dis = "Current location: " + r.current_observation.display_location.full + "  <p>";
+                        var temp = r.current_observation.temperature_string+ "  <p>";
+                        var wind = r.current_observation.wind_string+ "  <p>";
+
+                        function getWeather(id,res) {
+                            document.getElementById(id).innerHTML=res;
+                        }
+                        getWeather("weather",dis);
+                        getWeather("temp",temp);
+                        getWeather("wind",wind);
+
+                    </script>
 
 
 </body>
