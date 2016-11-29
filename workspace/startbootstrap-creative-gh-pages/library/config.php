@@ -4,7 +4,7 @@
   credentials for gaining access to your database...
 */
     $dbname = "DataBase Name";
-  	$hostname = " Name of the Host ";
-  	$uname = "Username that you are connecting with";
-  	$upass = "The Password that authenticates the above username";
+  	$hostname = "Localhost";
+  	$uname = "Root";
+  	$upass = "";
 ?>
