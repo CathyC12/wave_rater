@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" action="" method="post" class="login-form" name="formLogin" >
+                                    <form role="form"  class="login-form" name="formLogin" >
                                     <div id="errorBox"></div>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-username">Username</label>
@@ -149,7 +149,7 @@
                                             <label class="sr-only" for="password">Password</label>
                                             <input type="password" name="upass" placeholder="Password..." class="form-password form-control" id="upass">
                                         </div>
-                                        <button  type="submit" class="btn" value="Submit" name="submit" onclick="processLogin()" >Sign in!</button>
+                                        <button  type="submit" class="btn" >Sign in!</button>
                                     </form>
                                 </div>
                             </div>
@@ -195,39 +195,40 @@
                                     </div>
                                 </div>
                                 <div class="form-bottom">
-                                    <form role="form" action="" method="post" class="registration-form" id="register-form">                          
+                                    <form role="form" form action = "form.php" method ="POST" class="registration-form" id="register-form">                          
                                     <div class="form-body">
          
                                   <div class="alert alert-info" id="message" style="display:none;">
                                   submitted
                                   </div>
+                                  
 
                                         <div class="form-group">
                                             <label class="sr-only" for="form-last-name">Username</label>
-                                            <input name="name" type="text" class="form-control" placeholder="Username" id="uname">
+                                            <input  type="text" class="form-control" placeholder="Username" name="uname">
                                             <span class="help-block" id="error"></span>
                                         </div>
 
                                     <div class="row">
                                         <div class="form-group col-sm-6">
                                             <label class="sr-only" for="form-last-name">Password</label>
-                                            <input  name="password" id="password" type="password" class="form-control" placeholder="Password" id="upass">
+                                            <input   id="password" type="password" class="form-control" placeholder="Password" name="upass">
                                             <span class="help-block" id="error"></span>
                                         </div>
 
                                         <div class="form-group col-sm-6">
                                             <label class="sr-only" for="form-last-name">Password</label>
-                                            <input  name="cpassword" type="password" class="form-control" placeholder="Retype Password" id="upass">
+                                            <input  type="password" class="form-control" placeholder="Retype Password">
                                             <span class="help-block" id="error"></span>
                                         </div>
                                     </div>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-email">Email</label>
-                                            <input name="email" type="text" class="form-control" placeholder="Email" id="uemail">
+                                            <input type="text" class="form-control" placeholder="Email" name="uemail">
                                             <span class="help-block" id="error"></span>
                                         </div>
                                        
-                                        <button type="submit" class="btn">Sign me up!</button>
+                                        <button  class="btn"  type="submit"  name = "FormSubmission" value="Submit">Sign me up!</button>
                                     </form>
                                 </div>
                             </div>
