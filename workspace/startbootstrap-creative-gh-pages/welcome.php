@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="css/imghover.css">
-    <link rel="stylesheet" href="css/geolocation.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <link rel="shortcut icon" href="assets/ico/logoicon16.png">
@@ -47,9 +46,6 @@
     <script src="javascript/jquery-1.11.2.min.js"></script>
     <script src="javascript/jquery.validate.min.js"></script>
     <script src="javascript/register.js"></script>
-    
-
-
 
 </head>
 
@@ -69,7 +65,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#login">Login</a>
+                        <a class="page-scroll" href="#login"><?php echo $_POST["uname"];?></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#event">Events</a>
@@ -102,106 +98,13 @@
      <section class="bg-primary" id="login">
         <div class="container ">
             <div class="row" >
-                <div id="loginStuff">
-                        <div class="col-sm-5">
-                            <div class="form-box">
-                                <div class="form-top">
-                                    <div class="form-top-left">
-                                        <h3>Login to our site</h3>
-                                        <p>Enter username and password to log on:</p>
-                                    </div>
-                                    <div class="form-top-right">
-                                        <i class="fa fa-key"></i>
-                                    </div>
-                                </div>
-                                <div class="form-bottom">
-                                    <form role="form" action="login.php" class="login-form" name="formLogin" >
-                                    <div id="errorBox"></div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="form-username">Username</label>
-                                            <input type="text" name="uname" placeholder="Username..." class="form-username form-control" id="uname">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="password">Password</label>
-                                            <input type="password" name="upass" placeholder="Password..." class="form-password form-control" id="upass">
-                                        </div>
-                                        <button  type="submit" class="btn" name="loginSub" value="LoginSubmit" >Sign in!</button>
-                                    </form>
-                                </div>
-                            </div>
-                             <div class="social-login">
-                                <h3>...or login with:</h3>
-                                <div class="social-login-buttons">
-                                    <a class="btn btn-link-1 btn-link-1-facebook" href="#">
-                                        <i class="fa fa-facebook"></i> Facebook
-                                    </a>
-                                    <a class="btn btn-link-1 btn-link-1-twitter" href="#">
-                                        <i class="fa fa-twitter"></i> Twitter
-                                    </a>
-                                    <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
-                                        <i class="fa fa-google-plus"></i> Google Plus
-                                    </a>
-                                </div>
-                            </div>
-           
-                        </div>
-                           
-                        <div class="col-sm-1 middle-border"></div>
-                        <div class="col-sm-1"></div>
+                
+                    <h1 style="color:black">Welcome to Wave Rater</h1>
+                    <h2 style="color:#000080; font-weight:300"><?php echo $_POST["uname"]; ?></h2>
+                    <hr>          
                             
-                        <div class="col-sm-5">
-                            
-                            <div class="form-box">
-                                <div class="form-top">
-                                    <div class="form-top-left">
-                                        <h3>Sign up now</h3>
-                                        <p>Fill in the form below to get instant access:</p>
-                                    </div>
-                                    <div class="form-top-right">
-                                        <i class="fa fa-pencil"></i>
-                                    </div>
-                                </div>
-                                <div class="form-bottom">
-                                    <form role="form" action = "form.php" method ="POST" class="registration-form" id="register-form">                          
-                                    <div class="form-body">
-         
-                                  <div class="alert alert-info" id="message" style="display:none;">
-                                  You have registered!
-                                  </div>
-                                  
-
-                                        <div class="form-group">
-                                            <label class="sr-only" for="form-last-name">Username</label>
-                                            <input  type="text" class="form-control" placeholder="Username" name="uname">
-                                            <span class="help-block" id="error"></span>
-                                        </div>
-
-                                    <div class="row">
-                                        <div class="form-group col-sm-6">
-                                            <label class="sr-only" for="form-last-name">Password</label>
-                                            <input   id="password" type="password" class="form-control" placeholder="Password" name="upass">
-                                            <span class="help-block" id="error"></span>
-                                        </div>
-
-                                        <div class="form-group col-sm-6">
-                                            <label class="sr-only" for="form-last-name">Password</label>
-                                            <input  type="password" class="form-control" placeholder="Retype Password">
-                                            <span class="help-block" id="error"></span>
-                                        </div>
-                                    </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="form-email">Email</label>
-                                            <input type="text" class="form-control" placeholder="Email" name="uemail">
-                                            <span class="help-block" id="error"></span>
-                                        </div>
-                                       
-                                        <button  class="btn"  type="submit"  name = "FormSubmission" value="Submit">Sign me up!</button>
-                                    </form>
-                                </div>
-                            </div>
-                            
-                        </div>
-            </div><!-- end of row-->
+             </div>
+        </div><!-- end of row-->
     </section>
 
 
@@ -444,17 +347,6 @@
         </div>
     
        </section>
-              <hr>
-       <h2 class="section-heading">Beaches of Ireland</h2>
-       <hr>
-       <section id = "map">
-       
-       
-         <div id="map"></div>
-         
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtIhEiczwcpsIFrSWR32IzFbR1EpnMShk"></script>
-           
-         </section>
 
    <section id="contact">
         <div class="container">
@@ -484,8 +376,6 @@
         </div>
     </section>
 
-
-<script src="javascript/geolocation.js"></script>
 
 </body>
 
