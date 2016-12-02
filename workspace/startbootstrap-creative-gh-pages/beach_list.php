@@ -112,7 +112,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Wave Rater</a>
+                <a class="navbar-brand page-scroll" href="index.html">Wave Rater</a>
                 </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -128,7 +128,7 @@
                         <a class="page-scroll" href="index.html#watersport">Water Sports</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="index.html#contact">Contact</a>
+                        <a class="page-scroll" href="beach_list.php#contact">Contact</a>
                     </li>
                 </ul>
             </div>
