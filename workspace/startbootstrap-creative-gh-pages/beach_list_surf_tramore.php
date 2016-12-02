@@ -156,17 +156,17 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="https://m0.her.ie/wp-content/uploads/2015/03/13154258/small-Fanore-Beach.jpg" alt="">
+                    <img class="img-responsive" src="http://www.powerfloe.com/media/HB-1-%20WEBSHOTS-30%20PICS-BIG/Hawaii%20Beaches-18.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">Lahinch Beach, County Clare</a>
+                        <h4><a href="#">Tramore Beach, Co.Waterford</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: Ennistymon Rd, Dough, Lahinch, Co. Clare</p>
-                        <p>Lahinch Beach is located a short drive from the Cliffs of Moher and is therefore very popular with locals and tourists alike. The flooding tide makes it ideal for surfing, sea kayaking and kite surfing and there are a few surfing schools in the local area. Lahinch is a popular resort town with many restaurants and accommodation. </p>
-                        <p>The beach is lifeguarded during the bathing season and more information can be found on the noticeboard located at the beach.</p>
-                        <p>This beach has received the International Blue Flag award for 2016.</p>
+                        <p>Address: Tramore, Co. Waterford</p>
+                        <p>Tramore is a seaside town in the southeast, 13 kilometres south of Waterford city, and is one of Ireland's most popular holiday resorts. Situated on a hillside overlooking Tramore Bay,it has a fine promenade and a sandy bathing beach 5 kilometres long. The town is situated on the north-western corner of Tramore Bay on a hill that slopes down to the strand and divides the bay</p>
+                        <p>Tramore is a popular surfer's destination. Behind the spit lies the tidal lagoon known as the Back Strand.p>
+                        <p>This beach is lifeguard patrolled during the bathing season.</p>
                     </div>
                     <div class="ratings">
                         <p class="pull-right">3 reviews</p>

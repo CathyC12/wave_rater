@@ -156,17 +156,17 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="https://m0.her.ie/wp-content/uploads/2015/03/13154258/small-Fanore-Beach.jpg" alt="">
+                    <img class="img-responsive" src="http://cdn-01.independent.ie/incoming/article30429799.ece/3d548/AUTOCROP/w620/Coomeenole,%20Kerry,%20DEPOSIT.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">Lahinch Beach, County Clare</a>
+                        <h4><a href="#">The Velvet Strand, Portmarnock, Co. Dublin</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: Ennistymon Rd, Dough, Lahinch, Co. Clare</p>
-                        <p>Lahinch Beach is located a short drive from the Cliffs of Moher and is therefore very popular with locals and tourists alike. The flooding tide makes it ideal for surfing, sea kayaking and kite surfing and there are a few surfing schools in the local area. Lahinch is a popular resort town with many restaurants and accommodation. </p>
-                        <p>The beach is lifeguarded during the bathing season and more information can be found on the noticeboard located at the beach.</p>
-                        <p>This beach has received the International Blue Flag award for 2016.</p>
+                        <p>Address: The Velvet Strand, Portmarnock, Co. Dublin</p>
+                        <p>The Velvet Strand is a long sandy beach, approximately 5 km in length, consisting of a large sandy dune area. There are public toilets located at the northern end of the beach. Portmarnock is a haven for beach goers during the summer months, offering facilities like hotels, restaurants, fast food outlets and golf courses. </p>
+                        <p>This beach is lifeguard patrolled during the bathing season.</p>
+                        <p>Along the beach there is a path which leads to Malahide and it is used by many people each day. It is a great way of exercising.</p>
                     </div>
                     <div class="ratings">
                         <p class="pull-right">3 reviews</p>
