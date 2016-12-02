@@ -1,3 +1,23 @@
+<?php
+    
+    session_start();
+    
+    if ($_POST['submit']) {
+                mysql_connect ("localhost", "root", "") or die ('Error: ' . mysql_error());
+                mysql_select_db("test") or die ('Data error:' . mysql_error());
+        
+                $text = mysql_real_escape_string($_POST['comment']); 
+                $starRating = $_POST['dataRange']; 
+        
+                //$query="INSERT INTO reviews (comment) VALUES ('$text')";
+                $q1 = "INSERT into `reviews` (comment, stars) values ('$text', '$starRating')";
+                mysql_query($q1) or die ('Error updating database' . mysql_error());
+    
+            }
+    
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +50,7 @@
 
     <!-- Theme CSS -->
     <link href="css/beach_list.css" rel="stylesheet">
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +65,8 @@
 <script src="js/review.js">
 </script>
 
-<link rel="stylesheet" type="text/css" href="css/review.css">
+
+<!--<link rel="stylesheet" type="text/css" href="css/review.css">-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Optional theme -->
@@ -54,7 +76,29 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
  <!--Alice-->
 
+<!--REVIEW NEW ALICE ADDED 01/12/16 START -->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/review.js">
+</script>
 
+<link rel="stylesheet" type="text/css" href="css/review.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+ <script>
+ 
+ var starValue = 0;
+ 
+    function checkInput(){
+        alert("We have just clicked on the star "+starValue);
+        document.getElementById("hiddenValue").value = starValue;
+    }
+    
+ </script>
+ 
+ <!--REVIEW NEW ALICE ADDED 01/12/16 END -->
 
 </head>
 
@@ -140,32 +184,67 @@
         </div>               
     </div>    
 
+    
+    <!--REVIEW NEW ALICE ADDED 01/12/16 -->
+    
     <div class="container">
-        <div css="row" style="margin-top:20px; margin-left: 295px;">
-            <div class="col-md-13">
-           
-                <div class="well well-sm">
-                    <div class="text-right">
-                        <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
-                    </div>
-                    <div class="row" id="post-review-box" style="display:none;">
-                    <!--<div class="col-md-12">-->
-                        <form accept-charset="UTF-8" action="" method="post">
-                            <input id="ratings-hidden" name="rating" type="hidden"> 
-                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
-            
-                            <div class="text-right">
-                                <div class="stars starrr" data-rating="0"></div>
-                                <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
-                                <span class="glyphicon glyphicon-remove"></span>Cancel</a>
-                                <button class="btn btn-success btn-lg" type="submit">Save</button>
-                            </div>
-                        </form>
-                    </div>
+	<div class="row" style="margin-top:40px;">
+		<div class="col-md-6">
+    	<div class="design">
+            <div class="text-right">
+               <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
+            </div>
+            <div class="row" id="post-review-box" style="display:none;">
+                <div class="col-md-12">
+                    <h3 class="header">Please leave your review</h3>
+                    
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <textarea class="reviewtextarea" cols="5" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+        
+                        <div class="text-right">
+                            <div id="starR" class="stars starrr" data-rating="5" name="sta"></div>
+                            
+                            <input id="hiddenValue" type="hidden" value="5" name="dataRange"></input>
+                            
+                            <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+                            
+                             <input class="btn btn-success btn-green" name="submit" onclick="checkInput();return true;" type="submit" value="submit" />
+                        </div>
+                    </form>
                 </div>
-            </div> 
-        </div>
-    </div>    
+            </div>
+        </div> 
+           	 <?php
+
+           	    /*$conn = new mysqli("localhost", "root", "", "test");
+                // Check connection
+                if ($conn->connect_error) {
+                     die("Connection failed: " . $conn->connect_error);
+                } 
+           	 
+                    $text = "SELECT * FROM reviews";
+                    $result = $conn->query($text);
+                    
+                    if ($result->num_rows > 0) {
+                        // output data of each row
+                        while($row = $result->fetch_assoc()) {
+                            
+                            /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
+                           /* echo "<br><div class='design'><div class='id'>Review number: " . $row["id"]. "</div><br><div class='comment'>" . $row["comment"]. "</div><br><div class='stars starrr' data-rating='".$row["stars"]."'></div></div><br>";
+                            
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                    $conn->close();*/
+                    
+                ?>
+		</div>
+	</div>
+</div>
+
+    <!--REVIEW NEW ALICE ADDED 01/12/16 -->
 
     <!-- Footer -->  
    <section id="contact">
