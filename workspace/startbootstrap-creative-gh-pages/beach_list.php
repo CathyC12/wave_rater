@@ -186,10 +186,12 @@
 
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
-    
+            
     <div class="container">
-	<div class="row" style="margin-top:40px;">
-		<div class="col-md-6">
+        <div css="row" style="margin-top:18px; margin-left: 295px;">
+            <div class="col-md-13">
+	<!--<div class="row" style="margin-top:40px;">
+		<div class="col-md-6">-->
     	<div class="design">
             <div class="text-right">
                <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
