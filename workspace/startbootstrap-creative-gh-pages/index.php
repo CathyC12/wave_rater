@@ -86,7 +86,7 @@ header("location: welcome.php");
                         <a class="page-scroll" href="#watersport">Water Sports</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#map">Beaches of Ireland</a>
+                        <a class="page-scroll" href="#geo">Beaches of Ireland</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -457,16 +457,19 @@ header("location: welcome.php");
         </div>
     
        </section>
-        <section id = "map">
+        <section id = "geo">
         <hr>
            <h2 class="section-heading">Beaches of Ireland</h2>
          <hr>
+         </section>
+        <section id = "map">
           <div class="row">
               <div class="box">
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtIhEiczwcpsIFrSWR32IzFbR1EpnMShk"></script>
                </div>
            </div>
          </section>
+         
 
    <section id="contact">
         <div class="container">
