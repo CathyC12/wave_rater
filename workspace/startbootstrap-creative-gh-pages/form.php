@@ -1,5 +1,5 @@
  <?php
-   $host = "127.0.0.1";
+       $host = "127.0.0.1";
        $user = "cathy_c";                     //Your Cloud 9 username
        $pass = "";                              //Remember, there is NO password by default!
        $db = "waverater";                             //Your database name you want to connect to
@@ -22,8 +22,8 @@
    $queryUser = mysqli_query($myConnection,"SELECT uname FROM register WHERE uname='".$uname."'");
                if (mysqli_num_rows($queryUser) !=0){
                     echo "Username already exists";
-                    $myfile = fopen("index.html", "r") or die("Unable to open file!");
-                    echo fread($myfile,filesize("index.html"));
+                    $myfile = fopen("index.php", "r") or die("Unable to open file!");
+                    echo fread($myfile,filesize("index.php"));
                     fclose($myfile);
               }
               
