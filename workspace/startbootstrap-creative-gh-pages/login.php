@@ -26,7 +26,8 @@
          //sql query to fetch information of registered users
          //Dean look at this and see if it is a database error plzzz, thanks, you suck :D 
          $queryUser = mysqli_query($myConnection,"SELECT * FROM register where uname = '$uname' AND upass ='$upass'");
-         $rows = msql_num_rows ($myConnection,$querysql);
+         while($row = mysqli_fetch_assoc($result)) {
+               $$uname = $row['login_user'];
          
          if($rows == 1){
             $_Session['login_user'] = $uname; //initializing session
@@ -36,7 +37,7 @@
             $error ="Username or Password is invalid";
          }
          mysql_close($myConnection); //closing connection
-     
+        }
    
    /*$uname = $_POST ['uname'];
    $upass = $_POST ['upass'];

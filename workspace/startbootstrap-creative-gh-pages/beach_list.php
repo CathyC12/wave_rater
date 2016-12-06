@@ -236,7 +236,6 @@
                         // output data of each row
                         while($row = $result->fetch_assoc()) {
                             
-                            /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
                             echo "<br><div class='design'><div class='id'>Review number: " . $row["id"]. "</div><div class='id'>Date: " . $row["date"]. "</div><br><div class='comment'>" . $row["comment"]. "</div><br><div class='stars starrr' data-rating='".$row["stars"]."'></div></div><br>";
                             
                         }
