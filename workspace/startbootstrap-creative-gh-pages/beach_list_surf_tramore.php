@@ -32,6 +32,9 @@
 
     <title>Creative - Start Bootstrap Theme</title>
     
+        <!--Page tab at top -->
+    <link rel="shortcut icon" href="assets/ico/logoicon16.png">
+    
      <!-- Blue Font CSS for Nav Bar -->
     
     <link href="css/creative.min.css" rel="stylesheet">
