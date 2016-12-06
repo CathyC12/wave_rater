@@ -8,9 +8,10 @@
         
                 $text = mysql_real_escape_string($_POST['comment']); 
                 $starRating = $_POST['dataRange']; 
+                $date = mysql_real_escape_string(date('Y-m-d H:i:s'));
         
                 //$query="INSERT INTO reviews (comment) VALUES ('$text')";
-                $q1 = "INSERT into `Reviews` (comment, stars) values ('$text', '$starRating')";
+                $q1 = "INSERT into `Reviews` (comment, stars,date) values ('$text', '$starRating', '$date')";
                 mysql_query($q1) or die ('Error updating database' . mysql_error());
     
             }
@@ -236,7 +237,7 @@
                         while($row = $result->fetch_assoc()) {
                             
                             /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
-                            echo "<br><div class='design'><div class='id'>Review number: " . $row["id"]. "</div><br><div class='comment'>" . $row["comment"]. "</div><br><div class='stars starrr' data-rating='".$row["stars"]."'></div></div><br>";
+                            echo "<br><div class='design'><div class='id'>Review number: " . $row["id"]. "</div><div class='id'>Date: " . $row["date"]. "</div><br><div class='comment'>" . $row["comment"]. "</div><br><div class='stars starrr' data-rating='".$row["stars"]."'></div></div><br>";
                             
                         }
                     } else {
