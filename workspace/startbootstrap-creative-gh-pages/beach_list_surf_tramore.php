@@ -229,7 +229,7 @@
                      die("Connection failed: " . $conn->connect_error);
                 } 
            	 
-                    $text = "SELECT * FROM reviews";
+                    $text = "SELECT * FROM Reviews";
                     $result = $conn->query($text);
                     
                     if ($result->num_rows > 0) {

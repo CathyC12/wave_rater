@@ -25,10 +25,9 @@
          
          //sql query to fetch information of registered users
          //Dean look at this and see if it is a database error plzzz, thanks, you suck :D 
-         $queryUser = mysqli_query($myConnection,"SELECT * FROM register where uname = '$uname' AND upass ='$upass'");
-         $rows = mysqli_num_rows ($myConnection,$querysql);
-         
-         if($rows == 1){
+        $query = "SELECT * FROM users WHERE  username='$username' && password='$password'";
+         $result = mysqli_query($myConnection, $query);
+         if($result == 1){
             $_Session['login_user'] = $uname; //initializing session
             header ("location : welcome.php");
          }
