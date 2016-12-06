@@ -202,7 +202,7 @@
             </div>
             <div class="row" id="post-review-box" style="display:none;">
                 <div class="col-md-12">
-                    <h3 class="header">Please leave your review</h3>
+                    <h3 class="header">Please Leave Your Review</h3>
                     
                     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <textarea class="reviewtextarea" cols="5" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
@@ -241,7 +241,7 @@
                         $reviews = array_reverse($reviews ,true);
                         
                         foreach($reviews as $review){
-                            echo "<br><div class='design'><div class='id'>Review number: " . $review["id"]. "</div><div class='id'>Date: " . $review["date"]. "</div><br><div class='comment'>" . $review["comment"]. "</div><br><div class='stars starrr' data-rating='".$review["stars"]."'></div></div><br>";
+                            echo "<br><div class='design'><div class='id'>Date: " . $review["date"]. "</div><br><div class='comment'>" . $review["comment"]. "</div><br><div class='stars starrr' data-rating='".$review["stars"]."'></div></div><br>";
                         }
                     } else {
                         echo "0 results";

@@ -27,13 +27,11 @@
          //Dean look at this and see if it is a database error plzzz, thanks, you suck :D 
         $query = "SELECT * FROM users WHERE  username='$username' && password='$password'";
          $result = mysqli_query($myConnection, $query);
-         if($result == 1){
+         while ($row = mysqli_fetch_row($result)) {
             $_Session['login_user'] = $uname; //initializing session
             header ("location : welcome.php");
          }
-         else{
-            $error ="Username or Password is invalid";
-         }
+         
          mysql_close($myConnection); //closing connection
      
    
