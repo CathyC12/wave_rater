@@ -461,6 +461,7 @@ header("location: welcome.php");
         <hr>
            <h2 class="section-heading">Beaches of Ireland</h2>
          <hr>
+        
          </section>
         <section id = "map">
           <div class="row">

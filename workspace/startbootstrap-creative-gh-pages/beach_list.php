@@ -4,13 +4,13 @@
     
     if ($_POST['submit']) {
                 mysql_connect ("localhost", "root", "") or die ('Error: ' . mysql_error());
-                mysql_select_db("test") or die ('Data error:' . mysql_error());
+                mysql_select_db("waverater") or die ('Data error:' . mysql_error());
         
                 $text = mysql_real_escape_string($_POST['comment']); 
                 $starRating = $_POST['dataRange']; 
         
                 //$query="INSERT INTO reviews (comment) VALUES ('$text')";
-                $q1 = "INSERT into `reviews` (comment, stars) values ('$text', '$starRating')";
+                $q1 = "INSERT into `Reviews` (comment, stars) values ('$text', '$starRating')";
                 mysql_query($q1) or die ('Error updating database' . mysql_error());
     
             }
@@ -219,13 +219,13 @@
         </div> 
            	 <?php
 
-           	    /*$conn = new mysqli("localhost", "root", "", "test");
+           	    $conn = new mysqli("localhost", "root", "", "waverater");
                 // Check connection
                 if ($conn->connect_error) {
                      die("Connection failed: " . $conn->connect_error);
                 } 
            	 
-                    $text = "SELECT * FROM reviews";
+                    $text = "SELECT * FROM Reviews";
                     $result = $conn->query($text);
                     
                     if ($result->num_rows > 0) {
@@ -233,13 +233,13 @@
                         while($row = $result->fetch_assoc()) {
                             
                             /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
-                           /* echo "<br><div class='design'><div class='id'>Review number: " . $row["id"]. "</div><br><div class='comment'>" . $row["comment"]. "</div><br><div class='stars starrr' data-rating='".$row["stars"]."'></div></div><br>";
+                            echo "<br><div class='design'><div class='id'>Review number: " . $row["id"]. "</div><br><div class='comment'>" . $row["comment"]. "</div><br><div class='stars starrr' data-rating='".$row["stars"]."'></div></div><br>";
                             
                         }
                     } else {
                         echo "0 results";
                     }
-                    $conn->close();*/
+                    $conn->close();
                     
                 ?>
 		</div>

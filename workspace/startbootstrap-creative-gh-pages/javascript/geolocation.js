@@ -1,6 +1,6 @@
 // In the following example, markers appear when the user clicks on the map.
 // Each marker is labeled with a single alphabetical character.
-var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var labels = '';
 var labelIndex = 0;
 var google;
 
@@ -24,7 +24,7 @@ function initialize() {
 //   });
 
   // Add a marker at the center of the map.
-  addMarker(ireland, map);
+  //addMarker(ireland, map);
   
 }
 
@@ -129,6 +129,36 @@ function addMarker(location, map) {
   marker2.addListener('click', function() {
     infowindow2.open(map, marker2);
   });
+  
+  
+  
+   var contentString3 = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Tramore Beach, Co.Waterford</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Tramore Beach, Co.Waterford</b>Tramore is a seaside town in the southeast,' +
+       ' 13 kilometres south of Waterford city, and is one of Irelands most popular holiday resorts.'+
+      'Situated on a hillside overlooking Tramore Bay,it has a fine promenade and a sandy bathing beach 5 kilometres long.</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow3 = new google.maps.InfoWindow({
+    content: contentString3
+  });
+
+  var marker3 = new google.maps.Marker({
+    position: {
+    lat: 52.158664,
+    lng: -7.14386
+  },
+    map: map,
+    title: 'Tramore Beach, Co.Waterford'
+  });
+  marker3.addListener('click', function() {
+    infowindow3.open(map, marker3);
+  });
+
 }
 
 
