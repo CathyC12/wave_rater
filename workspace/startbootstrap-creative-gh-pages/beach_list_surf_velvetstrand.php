@@ -234,10 +234,14 @@
                     
                     if ($result->num_rows > 0) {
                         // output data of each row
-                        while($row = $result->fetch_assoc()) {
-                            
-                             echo "<br><div class='design'><div class='id'>Review number: " . $row["id"]. "</div><div class='id'>Date: " . $row["date"]. "</div><br><div class='comment'>" . $row["comment"]. "</div><br><div class='stars starrr' data-rating='".$row["stars"]."'></div></div><br>";
-                            
+                        while($row = $result->fetch_assoc()){
+                            $reviews[] = $row;
+                        }
+
+                        $reviews = array_reverse($reviews ,true);
+                        
+                        foreach($reviews as $review){
+                            echo "<br><div class='design'><div class='id'>Review number: " . $review["id"]. "</div><div class='id'>Date: " . $review["date"]. "</div><br><div class='comment'>" . $review["comment"]. "</div><br><div class='stars starrr' data-rating='".$review["stars"]."'></div></div><br>";
                         }
                     } else {
                         echo "0 results";
