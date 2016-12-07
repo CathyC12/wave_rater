@@ -77,6 +77,9 @@
                         <a class="page-scroll" href="#watersport">Water Sports</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#geo">Beaches of Ireland</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
@@ -353,6 +356,17 @@
         </div>
     
        </section>
+       
+        <section id = "geo">
+        <hr>
+           <h2 class="section-heading">Beaches of Ireland</h2>
+         <hr>
+        
+         </section>
+        <section id = "map">
+          <iframe width="600" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col2+from+1RPPO1rM0qQ63Bfb5aKhQiZdtJuOpjSw0epTZcK6r&amp;viz=MAP&amp;h=false&amp;lat=53.80684105185988&amp;lng=-7.935828931176729&amp;t=1&amp;z=6&amp;l=col2&amp;y=3&amp;tmplt=4&amp;hml=GEOCODABLE"></iframe>
+         </section>
+       
 
    <section id="contact">
         <div class="container">
@@ -381,6 +395,9 @@
             </div>
         </div>
     </section>
+    
+    <script src="javascript/geolocation.js"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3"></script>
 
 
 </body>

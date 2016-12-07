@@ -35,7 +35,7 @@ header("location: welcome.php");
     <link rel="stylesheet" href="assets/css/form-elements.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="css/imghover.css">
-    <link rel="stylesheet" href="css/geolocation.css">
+   
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <link rel="shortcut icon" href="assets/ico/logoicon16.png">
@@ -464,11 +464,7 @@ header("location: welcome.php");
         
          </section>
         <section id = "map">
-          <div class="row">
-              <div class="box">
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtIhEiczwcpsIFrSWR32IzFbR1EpnMShk"></script>
-               </div>
-           </div>
+          <iframe width="600" height="400" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col2+from+1RPPO1rM0qQ63Bfb5aKhQiZdtJuOpjSw0epTZcK6r&amp;viz=MAP&amp;h=false&amp;lat=53.80684105185988&amp;lng=-7.935828931176729&amp;t=1&amp;z=6&amp;l=col2&amp;y=3&amp;tmplt=4&amp;hml=GEOCODABLE"></iframe>
          </section>
          
 
@@ -499,9 +495,6 @@ header("location: welcome.php");
             </div>
         </div>
     </section>
-
-
-<script src="javascript/geolocation.js"></script>
 
 </body>
 

@@ -131,6 +131,9 @@
                     <li>
                         <a class="page-scroll" href="index.html#watersport">Water Sports</a>
                     </li>
+                     <li>
+                        <a class="page-scroll" href="index.html#map">Beaches of Ireland</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="beach_list.php#contact">Contact</a>
                     </li>
