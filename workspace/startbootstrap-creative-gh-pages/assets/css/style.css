@@ -2,7 +2,7 @@
 body {
 	background: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     color: #888;
     line-height: 30px;
@@ -31,13 +31,17 @@ h1, h2 {
 }
 
 h3 {
-	font-size: 22px;
+	font-size: 20px;
     font-weight: 300;
     color: #555;
     line-height: 30px;
 }
+p
+{
+	font-size: 10px;
+}
 
-img { max-width: 100%; }
+img { max-width: 50%; }
 
 ::-moz-selection { background: #19b9e7; color: #fff; text-shadow: none; }
 ::selection { background: #19b9e7; color: #fff; text-shadow: none; }

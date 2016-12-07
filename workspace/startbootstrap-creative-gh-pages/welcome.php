@@ -128,15 +128,15 @@
                 </div>
             </div>
         <div class="row-fluid">
-        <div class="span12">
+        <div class="span6">
             <div class="carousel slide" id="myCarousel">
                     <div class="carousel-inner">
                         <div class="item active">
-                                <ul class = "thumbnails">
+                                <ul>
                                     <li class="span3">
                                        <div class ="row">
                                             <div align = "left" class="col-lg-4">
-                                            <a href="http://seasessions.com/"><img src="./img/event1.png" sizes="260x140" alt="SeaSession.com"></a>
+                                            <a href="http://seasessions.com/"><img src="./img/event1.jpg" sizes="260x140" alt="SeaSession.com"></a>
                                         </div>
                                         
                                             <div class="caption col-lg-8">
@@ -150,7 +150,7 @@
                                     <li class="span3">
                                        <div class = "row">
                                         <div align = "center" class="col-lg-4">
-                                            <a href="http://www.irishsurfing.ie/"><img src="./img/event2.png" sizes="260x140" alt="SeaSession.com" alt=""></a>
+                                            <a href="http://www.irishsurfing.ie/"><img src="./img/event2.jpg" sizes="260x140" alt="SeaSession.com" alt=""></a>
                                         </div>
                                         <div class="caption col-lg-8">
                                             <h4>Surfing Intervarsities 2016</h4>
@@ -162,7 +162,7 @@
                                     <li class="span3">    
                                        <div class = "row">
                                          <div align = "right" class="col-lg-4">
-                                            <a href="#"><img src="./img/event2.png" sizes="260x140" alt="SeaSession.com"></a>
+                                            <a href="#"><img src="./img/event3.jpg" sizes="260x140" alt="SeaSession.com"></a>
                                         </div>
                                         <div class="caption col-lg-8">
                                             <h4>50th Anniversary Irish Surfing Association</h4>
@@ -174,11 +174,11 @@
                                 </ul>
                           </div><!-- /Slide1 --> 
                         <div class="item">
-                                <ul class="thumbnails">
+                                <ul>
                                     <li class="span3">
                                     <div class ="row">
                                         <div align = "left" class="col-lg-4">
-                                            <a href="#"><img src="./img/event4.jpg" sizes="260x140" alt="wwkc.net"></a>
+                                            <a href="#"><img src="./img/event44.jpg" sizes="260x140" alt="wwkc.net"></a>
                                         </div>
                                         <div class="caption col-lg-8">
                                             <h4>Kayaking Beginners Course 2016</h4>
@@ -190,7 +190,7 @@
                                     <li class="span3">
                                      <div class ="row">
                                         <div align = "left" class="col-lg-4">
-                                            <a href="#"><img src="./img/event5.png" sizes="260x140" alt="www.totalexperience.ie"></a>
+                                            <a href="#"><img src="./img/event5.PNG" sizes="260x140" alt="www.totalexperience.ie"></a>
                                         </div>
                                         <div class="caption col-lg-8">
                                             <h4>Wacko on the Jacko</h4>
@@ -202,7 +202,7 @@
                                     <li class="span3">
                                      <div class ="row">
                                         <div align = "left" class="col-lg-4">
-                                            <a href="#"><img src="./img/event6.png" sizes="260x140" alt="salmonleapcanoeclub"></a>
+                                            <a href="#"><img src="./img/event6.jpg" sizes="260x140" alt="salmonleapcanoeclub"></a>
                                         </div>
                                         <div class="caption col-lg-8">
                                             <h4>Salmon Leap Canoe Club Events</h4>
@@ -215,11 +215,11 @@
                                 </ul>
                           </div><!-- /Slide2 --> 
                         <div class="item">
-                            <ul class="thumbnails">
+                            <ul>
                                 <li class="span3">
                                     <div class ="row">
                                         <div align = "left" class="col-lg-4">
-                                            <a href="www.divegalway.com"><img src="./img/event7.png" sizes="260x140" alt="DiveGalway"></a>
+                                            <a href="www.divegalway.com"><img src="./img/event7.jpg" sizes="260x140" alt="DiveGalway"></a>
                                         </div>
                                         <div class="caption col-lg-8">
                                             <h4>Dive Galway</h4>
@@ -231,7 +231,7 @@
                                 <li class="span3">
                                     <div class ="row">
                                         <div align = "left" class="col-lg-4">
-                                            <a href="http://www.dingledolphin.com"><img src="./img/event8.png" sizes="260x140" alt="dingle dolphin"></a>
+                                            <a href="http://www.dingledolphin.com"><img src="./img/event88.png" sizes="260x140" alt="dingle dolphin"></a>
                                         </div>
                                         <div class="caption col-lg-8">
                                             <h4>Fungie Dolphin Tours</h4>
@@ -243,7 +243,7 @@
                                 <li class="span3">
                                          <div class ="row">
                                             <div align = "left" class="col-lg-4">
-                                                <a href="https://wildatlanticwildlife.ie/"><img  src="./img/event9.jpg" sizes="260x140" alt="wildatlanticwhildlife"></a>
+                                                <a href="https://wildatlanticwildlife.ie/"><img  src="./img/event99.jpg" sizes="260x140" alt="wildatlanticwhildlife"></a>
                                             </div>
                                             <div class="caption col-lg-8">
                                                 <h4>West Cork Sailing and Powerboat Centre</h4>
@@ -395,9 +395,6 @@
             </div>
         </div>
     </section>
-    
-    <script src="javascript/geolocation.js"></script>
-<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3"></script>
 
 
 </body>
