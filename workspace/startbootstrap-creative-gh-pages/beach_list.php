@@ -172,21 +172,41 @@
                         <p>The beach is lifeguarded during the bathing season and more information can be found on the noticeboard located at the beach.</p>
                         <p>This beach has received the International Blue Flag award for 2016.</p>
                     </div>
-                    <div class="ratings">
-                        <p class="pull-right">3 reviews</p>
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            4.0 stars
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>               
-    </div>    
+                    
+            <!--Average star rating and amount of reviews -->
+            <?php
+                $conn = new mysqli("localhost", "root", "", "waverater");
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                } 
+                        
+                $middleval = floor(($count-1)/2);
+                $query = "SELECT * FROM Reviews";
+                $review = $conn->query($query);
+            
+                while($row = $review->fetch_assoc()){
+                    $reviews[] = $row;
+                }
+                
+                $starQuery = "SELECT ROUND(AVG(stars),1) AS average_stars FROM Reviews";
+                $reviewStars = $conn->query($starQuery);
+                        
+                $reviewCount = count($reviews);
+                $reviewStars = $reviewStars->fetch_assoc();
+                        
+                $averageStars = implode(',', $reviewStars);
+                
+                echo "<div class='ratings'><p class='pull-right'>$reviewCount Reviews</p>
+                <p>
+                <div class='stars starrr' style='float:left' contenteditable='false'  data-rating='".$averageStars."'></div>
+                </p>
+                <br/><br/
+                <p>
+                            $averageStars Stars
+                </p></div></div></div></div></div>"
+            ?> 
+    
 
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
@@ -228,7 +248,6 @@
                 if ($conn->connect_error) {
                      die("Connection failed: " . $conn->connect_error);
                 } 
-           	 
                     $text = "SELECT * FROM Reviews";
                     $result = $conn->query($text);
                     
