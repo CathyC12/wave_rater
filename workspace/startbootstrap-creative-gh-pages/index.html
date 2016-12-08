@@ -48,6 +48,7 @@
     <script src="javascript/jquery.validate.min.js"></script>
     <script src="javascript/register.js"></script>
     
+    
 
 
 
@@ -160,26 +161,26 @@
 
                                         <div class="form-group">
                                             <label class="sr-only" for="form-last-name">Username</label>
-                                            <input  type="text" class="form-control" placeholder="Username" name="uname">
+                                            <input  type="text" id="upass" class="form-control" placeholder="Username" name="uname">
                                             <span class="help-block" id="error"></span>
                                         </div>
 
                                     <div class="row">
                                         <div class="form-group col-sm-6">
                                             <label class="sr-only" for="form-last-name">Password</label>
-                                            <input   id="password" type="password" class="form-control" placeholder="Password" name="upass">
+                                            <input   id="upass" type="password" class="form-control" placeholder="Password" name="upass">
                                             <span class="help-block" id="error"></span>
                                         </div>
 
-                                        <div class="form-group col-sm-6">
+                                        <!--<div class="form-group col-sm-6">
                                             <label class="sr-only" for="form-last-name">Password</label>
-                                            <input  type="password" class="form-control" placeholder="Retype Password">
+                                            <input  type="password" class="form-control" id="c_upass" name="c_upass" placeholder="Retype Password">
                                             <span class="help-block" id="error"></span>
-                                        </div>
+                                        </div>-->
                                     </div>
                                         <div class="form-group">
                                             <label class="sr-only" for="form-email">Email</label>
-                                            <input type="text" class="form-control" placeholder="Email" name="uemail">
+                                            <input type="text" id="uemail" class="form-control" placeholder="Email" type="email" name="uemail">
                                             <span class="help-block" id="error"></span>
                                         </div>
                                         <button  class="btn"  type="submit"  name = "FormSubmission" value="Submit">Sign me up!</button>
@@ -458,7 +459,7 @@
             </div>
         </div>
     </section>
-
+    
 </body>
 
 </html>

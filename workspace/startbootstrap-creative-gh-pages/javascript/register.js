@@ -20,44 +20,44 @@ $('document').ready(function()
 					
 		  rules:
 		  {
-				name: {
+				uname: {
 					required: true,
 					validname: true,
 					minlength: 4
 				},
-				email: {
+				uemail: {
 					required: true,
 					validemail: true
 				},
-				password: {
+				upass: {
 					required: true,
 					minlength: 8,
 					maxlength: 15
 				},
-				cpassword: {
+				/*c_upass: {
 					required: true,
-					equalTo: '#password'
-				},
+					equalTo: '#upass'
+				},*/
 		   },
 		   messages:
 		   {
-				name: {
+				uname: {
 					required: "Please Enter User Name",
 					validname: "Name must contain only alphabets and space",
 					minlength: "Your Name is Too Short"
 					  },
-			    email: {
+			    uemail: {
 					  required: "Please Enter Email Address",
 					  validemail: "Enter Valid Email Address"
 					   },
-				password:{
+				upass:{
 					required: "Please Enter Password",
 					minlength: "Password at least have 8 characters"
 					},
-				cpassword:{
+				/*c_upass:{
 					required: "Please Retype your Password",
 					equalTo: "Password Did not Match !"
-					}
+					}*/
 		   },
 		   errorPlacement : function(error, element) {
 			  $(element).closest('.form-group').find('.help-block').html(error.html());
@@ -72,7 +72,7 @@ $('document').ready(function()
 		   
 		   		submitHandler: function(form){
 					
-					alert('submitted');
+					alert('You are registered');
 					form.submit();
 					//var url = $('#register-form').attr('action');
 					//location.href=url;
