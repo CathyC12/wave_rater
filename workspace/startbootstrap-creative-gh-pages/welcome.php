@@ -98,15 +98,16 @@
             </div>
         </div> 
     </header>
-    <!-- <section class="bg-primary" id="login">
+   <!-- <section class="bg-primary" id="login">
         <div class="container ">
             <div class="row" >
                 
                     <h1 style="color:black">Welcome to Wave Rater</h1>
+                   
                     <hr>          
                             
              </div>
-        </div><!-- end of row
+        </div><!-- end of row-->
     </section> -->
 
 
@@ -266,7 +267,7 @@
             			<img class="img-responsive" src="img/portfolio/thumbnails/surf.jpg" border="5">
                 		  <div class="overlay">
                      		<h2>Surfing</h2>
-                    		<a class="info" href="beach_list.html">Find out More</a>
+                    		<a class="info" href="beach_list.php">Find out More</a>
             			  </div>
             		 </div>
             	    </div>
@@ -277,7 +278,7 @@
                 			<img class="img-responsive" src="img/portfolio/thumbnails/kite.jpg" border="5">
                 		      <div class="overlay">
                      			<h2>Kite Surfing</h2>
-                    			<a class="info" href="beach_list.html">Find out More</a>
+                    			<a class="info" href="beach_list.php">Find out More</a>
                 		  	</div>
                 		</div>
                 	</div>
@@ -289,7 +290,7 @@
             			<img class="img-responsive" src="img/portfolio/thumbnails/sailing.jpg" border="5">
                 		  <div class="overlay">
                      		<h2>Sailing</h2>
-                    		<a class="info" href="beach_list.html">Find out More</a>
+                    		<a class="info" href="beach_list.php">Find out More</a>
             			  </div>
             		 </div>
             	    </div>
@@ -301,7 +302,7 @@
                 			<img class="img-responsive" src="img/portfolio/thumbnails/canoe.jpg" border="5">
                 		      <div class="overlay">
                      			<h2>Canoeing</h2>
-                    			<a class="info" href="beach_list.html">Find out More</a>
+                    			<a class="info" href="beach_list.php">Find out More</a>
                 		  	</div>
                 		</div>
                 	</div>
@@ -313,7 +314,7 @@
             			<img class="img-responsive" src="img/portfolio/thumbnails/jetskiing.jpg" border="5">
                 		  <div class="overlay">
                      		<h2>Jet Skiing</h2>
-                    		<a class="info" href="beach_list.html">Find out More</a>
+                    		<a class="info" href="beach_list.php">Find out More</a>
             			  </div>
             		 </div>
             	    </div>

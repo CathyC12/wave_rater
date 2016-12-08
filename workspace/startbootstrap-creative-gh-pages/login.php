@@ -36,8 +36,6 @@
              echo "this works";
             $_Session['login_user'] = $uname; //initializing session
             
-            
-            
             header('Location: welcome.php');
             
          }
