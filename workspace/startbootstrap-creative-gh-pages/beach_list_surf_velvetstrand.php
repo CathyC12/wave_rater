@@ -214,8 +214,10 @@
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
             
-    <div class="container">
-        <div class="row" style="margin-top:18px; margin-top: 40px;">
+   <div class="container" >
+       <div class="padding">
+        <div class="row" style="margin-top:18px; margin-top: 40px;"> 
+            <div class="col-md-11.7">
        <!-- <div class="row" style="margin-top:18px; margin-top: 40px;"> ->
             <div class="col-md-13">
 	<!--<div class="row" style="margin-top:40px;">

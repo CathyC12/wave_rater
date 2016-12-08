@@ -22,8 +22,8 @@
    $queryUser = mysqli_query($myConnection,"SELECT uname FROM register WHERE uname='".$uname."'");
                if (mysqli_num_rows($queryUser) !=0){
                     echo "Username already exists";
-                    $myfile = fopen("index.php", "r") or die("Unable to open file!");
-                    echo fread($myfile,filesize("index.php"));
+                    $myfile = fopen("index.html", "r") or die("Unable to open file!");
+                    echo fread($myfile,filesize("index.html"));
                     fclose($myfile);
               }
               

@@ -11,12 +11,12 @@ session_start(); //starting session
 $user_check=$_SESSION['login_user'];
 
 //SQL Query to fetch complete information of user
-$ses_query = mysql_query ("SELECT * FROM register WHERE uname = '$uname'");
-$rows = mysql_fetch_assoc($ses_query);
+$ses_query = mysqli_query ("SELECT * FROM register WHERE uname = '$uname'");
+$rows = mysqli_fetch_assoc($ses_query);
 $login_session = $rows['uname'];
 if(!isset($login_session)){
-mysql_close($myConnection); // Closing Connection
-header('Location: index.php'); // Redirecting To Home Page
+mysqli_close($myConnection); // Closing Connection
+header('Location: welcome.php'); // Redirecting To Home Page
 
 }
 ?>

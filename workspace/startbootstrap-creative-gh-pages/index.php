@@ -105,7 +105,7 @@ header("location: welcome.php");
                         <h1 style="color:black">Welcome to Wave Rater</h1>
                         <h2 style="color:#000080; font-weight:300">Your Source for the best Beaches in Ireland </h2>
                         <hr>
-                        <p style="color: #000080; font-weight:300">Information about Wave Rater and what they can find in the website. They can login and view the events and the main function is to review and rate beaches depending on the watersport associated with it and also they cna use GEO Location to find the nearest beach depending on their location.</p>
+                         <p style="color: #000080; font-weight:300">Information about Wave Rater and what they can find in the website. They can login and view the events and the main function is to review and rate beaches depending on the watersport associated with it and also they can also view some of the beaches on a map of Ireland.</p>
                     </div>
             </div>
         </div> 

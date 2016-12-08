@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -99,7 +98,7 @@
                         <h1 style="color:black">Welcome to Wave Rater</h1>
                         <h2 style="color:#000080; font-weight:300">Your Source for the best Beaches in Ireland </h2>
                         <hr>
-                        <p style="color: #000080; font-weight:300">Information about Wave Rater and what they can find in the website. They can login and view the events and the main function is to review and rate beaches depending on the watersport associated with it and also they cna use GEO Location to find the nearest beach depending on their location.</p>
+                        <p style="color: #000080; font-weight:300">Information about Wave Rater and what they can find in the website. They can login and view the events and the main function is to review and rate beaches depending on the watersport associated with it and also they can also view some of the beaches on a map of Ireland.</p>
                     </div>
             </div>
         </div> 
@@ -109,7 +108,30 @@
             <div class="row" >
                 
                     <h1 style="color:black">Welcome to Wave Rater</h1>
-                    <h2 style="color:#000080; font-weight:300"><?php echo $login_session;; ?></h2>
+                    <h2 style="color:#000080; font-weight:300"><?php echo $login_session; ?></h2>
+                    <?php
+	 $myConnection= mysqli_connect($host,$user,$pass) or die ("failed to connect to database");
+       
+       mysqli_select_db($myConnection, "waverater") or die ("no database");
+
+	// SQL query
+	$strSQL = "SELECT * FROM register";
+
+	// Execute the query (the recordset $rs contains the result)
+	$rs = mysql_query($strSQL);
+	
+	// Loop the recordset $rs
+	// Each row will be made into an array ($row) using mysql_fetch_array
+	while($row = mysql_fetch_array($rs)) {
+
+	   // Write the value of the column FirstName (which is now in the array $row)
+	  echo $row['uname'] . "<br />";
+
+	  }
+
+	// Close the database connection
+	mysql_close();
+                    ?>
                     <hr>          
                             
              </div>

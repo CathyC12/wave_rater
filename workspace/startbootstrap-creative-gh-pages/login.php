@@ -10,7 +10,7 @@
    $error ='';
    
   
-        $myConnection= mysqli_connect($host,$user,$pass) or die ("failed to connect to database");
+       $myConnection= mysqli_connect($host,$user,$pass) or die ("failed to connect to database");
        
        mysqli_select_db($myConnection, "waverater") or die ("no database");
        
@@ -35,11 +35,18 @@
          if($username == $uname){ //this checks to see if the username entered os the same as the one in the datbase if so run action
              echo "this works";
             $_Session['login_user'] = $uname; //initializing session
-            header("location: welcome.php");
+            
+            
+            
+            header('Location: welcome.php');
+            
          }
+             
+         
          
          else{
-             echo "why can't we code?";
+             echo "You are not registered!";
+             header('Location: index.html');
              //echo $uname;
               //echo $upass;
               //echo $uemail;

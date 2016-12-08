@@ -175,7 +175,7 @@
                         <p>The beach is lifeguarded during the bathing season and more information can be found on the noticeboard located at the beach.</p>
                         <p>This beach has received the International Blue Flag award for 2016.</p>
                     </div>
-                    
+      
             <!--Average star rating and amount of reviews -->
             <?php
                 $conn = new mysqli("localhost", "root", "", "waverater");
@@ -202,7 +202,7 @@
                 
                 echo "<div class='ratings'><p class='pull-right'>$reviewCount Reviews</p>
                 <p>
-                <div class='stars starrr' style='float:left' contenteditable='false' data-rating='".$averageStars."'></div>
+                <div class='stars starrr' style='float:left' contenteditable='false' disabled='disabled' data-rating='".$averageStars."'></div>
                 </p>
                 <br/><br/
                 <p>
@@ -213,9 +213,11 @@
 
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
-            
-    <div class="container">
-        <div class="row" style="margin-top:18px; margin-top: 40px;">
+  
+   <div class="container" >
+       <div class="padding">
+        <div class="row" style="margin-top:18px; margin-top: 40px;"> 
+            <div class="col-md-11.7">
        <!-- <div class="row" style="margin-top:18px; margin-top: 40px;"> ->
             <div class="col-md-13">
 	<!--<div class="row" style="margin-top:40px;">
@@ -245,6 +247,7 @@
                 </div>
             </div>
         </div> 
+        
            	 <?php
 
            	    $conn = new mysqli("localhost", "root", "", "waverater");
