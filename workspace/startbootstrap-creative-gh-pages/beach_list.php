@@ -96,7 +96,7 @@
  var starValue = 0;
  
     function checkInput(){
-        alert("We have just clicked on the star "+starValue);
+        alert("Thank you for your rating of "+starValue);
         document.getElementById("hiddenValue").value = starValue;
     }
     
@@ -216,6 +216,7 @@
             
     <div class="container">
         <div class="row" style="margin-top:18px; margin-top: 40px;">
+       <!-- <div class="row" style="margin-top:18px; margin-top: 40px;"> ->
             <div class="col-md-13">
 	<!--<div class="row" style="margin-top:40px;">
 		<div class="col-md-6">-->
