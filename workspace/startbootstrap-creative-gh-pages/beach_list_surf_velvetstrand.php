@@ -163,7 +163,7 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="http://cdn-01.independent.ie/incoming/article30429799.ece/3d548/AUTOCROP/w620/Coomeenole,%20Kerry,%20DEPOSIT.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/velvetstrand.jpg" alt="">
                     <div class="caption-full">
                         <h4><a href="#">The Velvet Strand, Portmarnock, Co. Dublin</a>
                         </h4>

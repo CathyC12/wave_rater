@@ -33,7 +33,7 @@
    $query = "INSERT into register (`uname`,`upass`,`uemail`) values ('$uname','$upass','$uemail')";
            $result = mysqli_query($myConnection, $query);
             
-   
+   header('Location: index.html');
    
    
    

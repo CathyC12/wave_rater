@@ -163,7 +163,7 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="https://m0.her.ie/wp-content/uploads/2015/03/13154258/small-Fanore-Beach.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/lahinch.jpg" alt="">
                     <div class="caption-full">
                         <h4><a href="#">Lahinch Beach, County Clare</a>
                         </h4>

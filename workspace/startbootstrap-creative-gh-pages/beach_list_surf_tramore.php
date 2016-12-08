@@ -163,7 +163,7 @@
             <div class="col-md-9">
 
                <div class="thumbnail">
-                    <img class="img-responsive" src="http://www.powerfloe.com/media/HB-1-%20WEBSHOTS-30%20PICS-BIG/Hawaii%20Beaches-18.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/tramore.jpg" alt="">
                     <div class="caption-full">
                         <h4><a href="#">Tramore Beach, Co.Waterford</a>
                         </h4>

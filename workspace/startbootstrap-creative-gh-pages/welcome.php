@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,9 +65,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#login"><?php echo $login_session;?></a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#event">Events</a>
                     </li>
                     <li>
@@ -103,40 +98,16 @@
             </div>
         </div> 
     </header>
-     <section class="bg-primary" id="login">
+    <!-- <section class="bg-primary" id="login">
         <div class="container ">
             <div class="row" >
                 
                     <h1 style="color:black">Welcome to Wave Rater</h1>
-                    <h2 style="color:#000080; font-weight:300"><?php echo $login_session; ?></h2>
-                    <?php
-	 $myConnection= mysqli_connect($host,$user,$pass) or die ("failed to connect to database");
-       
-       mysqli_select_db($myConnection, "waverater") or die ("no database");
-
-	// SQL query
-	$strSQL = "SELECT * FROM register";
-
-	// Execute the query (the recordset $rs contains the result)
-	$rs = mysql_query($strSQL);
-	
-	// Loop the recordset $rs
-	// Each row will be made into an array ($row) using mysql_fetch_array
-	while($row = mysql_fetch_array($rs)) {
-
-	   // Write the value of the column FirstName (which is now in the array $row)
-	  echo $row['uname'] . "<br />";
-
-	  }
-
-	// Close the database connection
-	mysql_close();
-                    ?>
                     <hr>          
                             
              </div>
-        </div><!-- end of row-->
-    </section>
+        </div><!-- end of row
+    </section> -->
 
 
      <section id="event">
