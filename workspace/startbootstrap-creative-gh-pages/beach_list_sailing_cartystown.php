@@ -150,11 +150,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Sailing</p>
                 <div class="list-group">
-                       <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
-                    <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
-                    <a href="beach_list_kite_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
+                    <a href="beach_list_sailing_cartystown.php" class="list-group-item active">Cartystown beach, Coney Island, Co. Sligo</a>
+                    <a href="beach_list_sailing_badgerscove.php" class="list-group-item active">Badger's Cove, Dunmore East, Co. Waterford</a>
+                    <a href="beach_list_sailing_rossnowlagh.php" class="list-group-item active">Rossnowlagh, Co. Donegal</a>
                 </div>
             </div>
             
@@ -163,17 +163,18 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/dogsbay.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/cartystown.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">Dog's Bay, Co.Galway</a>
+                        <h4><a href="#">Cartystown beach, Coney Island, Co. Sligo</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: Dog's Bay, Co.Galway</p>
-                        <p>Dogs Bay is a spectacular horseshoe shaped bay with more than a mile long stretch of white sandy beach.</p>
-                        <p>The beach is situated only 2 miles outside the picturesque village of Roundstone in Connemara, Co. Galway.</p>
-                        <p>Dogs Bay and Gurteen Bay make up one of the finest stretches of coastline in Connemara, offering uncompromising views of Errisbeg and the surrounding countryside.</p>
+                        <p>Address: Cartystown beach, Coney Island, Co. Sligo</p>
+                        <p>Between Rosses Point and buzzing Strandhill (whose own beach is surf heaven) lies the original Coney Island, with a lovely bather's beach, Cartystown. </p>
+                        <p>The island is tidal, so you can drive or walk via Cummeen Strand at low tide, or take a boat trip from the pier at Rosses Point.</p>
+                        <p> We reccommend checking the tidal tables first though. </p>
+                        
                     </div>
       
             <!--Average star rating and amount of reviews -->

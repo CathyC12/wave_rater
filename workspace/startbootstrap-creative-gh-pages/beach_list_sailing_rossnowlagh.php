@@ -150,11 +150,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Sailing</p>
                 <div class="list-group">
-                       <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
-                    <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
-                    <a href="beach_list_kite_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
+                    <a href="beach_list_sailing_cartystown.php" class="list-group-item active">Cartystown beach, Coney Island, Co. Sligo</a>
+                    <a href="beach_list_sailing_badgerscove.php" class="list-group-item active">Badger's Cove, Dunmore East, Co. Waterford</a>
+                    <a href="beach_list_sailing_rossnowlagh.php" class="list-group-item active">Rossnowlagh, Co. Donegal</a>
                 </div>
             </div>
             
@@ -163,17 +163,18 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/dogsbay.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/rossnowlagh.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">Dog's Bay, Co.Galway</a>
+                        <h4><a href="#">Rossnowlagh, Co. Donegal</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: Dog's Bay, Co.Galway</p>
-                        <p>Dogs Bay is a spectacular horseshoe shaped bay with more than a mile long stretch of white sandy beach.</p>
-                        <p>The beach is situated only 2 miles outside the picturesque village of Roundstone in Connemara, Co. Galway.</p>
-                        <p>Dogs Bay and Gurteen Bay make up one of the finest stretches of coastline in Connemara, offering uncompromising views of Errisbeg and the surrounding countryside.</p>
+                        <p>Address: Rossnowlagh, Co Donegal</p>
+                        <p>Facing westward into the Atlantic, Rossnowlagh Beach has seen waves up to 7m high. No surprise then, that surfers love it and it's a good spot for beginners.</p>
+                        <p>But so do families who can drive cars laden with buggies, windbreaks and deckchairs on to the beach and set up picnic blankets nearby to break sandcastle-building records or dabble in the water.</p>
+                        
+                        
                     </div>
       
             <!--Average star rating and amount of reviews -->

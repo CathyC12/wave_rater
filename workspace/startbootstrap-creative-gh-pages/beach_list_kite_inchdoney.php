@@ -152,7 +152,7 @@
             <div class="col-md-3">
                 <p class="lead">Kite Surfing</p>
                 <div class="list-group">
-                       <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
+                    <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
                     <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
                     <a href="beach_list_kite_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
                 </div>
@@ -163,17 +163,17 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/dogsbay.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/inch.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">Dog's Bay, Co.Galway</a>
+                        <h4><a href="#">Inchdoney, Co. Cork</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: Dog's Bay, Co.Galway</p>
-                        <p>Dogs Bay is a spectacular horseshoe shaped bay with more than a mile long stretch of white sandy beach.</p>
-                        <p>The beach is situated only 2 miles outside the picturesque village of Roundstone in Connemara, Co. Galway.</p>
-                        <p>Dogs Bay and Gurteen Bay make up one of the finest stretches of coastline in Connemara, offering uncompromising views of Errisbeg and the surrounding countryside.</p>
+                        <p>Address: Inchdoney, Co. Cork</p>
+                        <p>Follow the road from Cork to Clonakilty and just beyond you'll find Inchdoney Island, a blob of land surrounded by crystal clear Blue-Flagged waters.</p>
+                        <p>Sheltered by land on three sides, it has views out over Clonakilty Bay to the south and here you can walk the sandy shore and watch the long rollers come in from the Atlantic.</p>
+                        
                     </div>
       
             <!--Average star rating and amount of reviews -->
