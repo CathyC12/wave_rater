@@ -33,7 +33,7 @@
 
     <title>Creative - Start Bootstrap Theme</title>
     
-        <!--Page tab at top -->
+    <!--Page tab at top -->
     <link rel="shortcut icon" href="assets/ico/logoicon16.png">
     
      <!-- Blue Font CSS for Nav Bar -->
@@ -96,7 +96,7 @@
  var starValue = 0;
  
     function checkInput(){
-        alert("We have just clicked on the star "+starValue);
+        alert("Thank you for your rating of "+starValue);
         document.getElementById("hiddenValue").value = starValue;
     }
     
@@ -131,6 +131,9 @@
                     <li>
                         <a class="page-scroll" href="index.html#watersport">Water Sports</a>
                     </li>
+                     <li>
+                        <a class="page-scroll" href="index.html#map">Beaches of Ireland</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="beach_list.php#contact">Contact</a>
                     </li>
@@ -159,7 +162,7 @@
 
             <div class="col-md-9">
 
-                <div class="thumbnail">
+               <div class="thumbnail">
                     <img class="img-responsive" src="http://www.powerfloe.com/media/HB-1-%20WEBSHOTS-30%20PICS-BIG/Hawaii%20Beaches-18.jpg" alt="">
                     <div class="caption-full">
                         <h4><a href="#">Tramore Beach, Co.Waterford</a>
@@ -172,27 +175,48 @@
                         <p>Tramore is a popular surfer's destination. Behind the spit lies the tidal lagoon known as the Back Strand.p>
                         <p>This beach is lifeguard patrolled during the bathing season.</p>
                     </div>
-                    <div class="ratings">
-                        <p class="pull-right">3 reviews</p>
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            4.0 stars
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>               
-    </div>    
+                    
+            <!--Average star rating and amount of reviews -->
+            <?php
+                $conn = new mysqli("localhost", "root", "", "waverater");
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                } 
+                        
+                $middleval = floor(($count-1)/2);
+                $query = "SELECT * FROM Reviews";
+                $review = $conn->query($query);
+            
+                while($row = $review->fetch_assoc()){
+                    $reviews[] = $row;
+                }
+                
+                $starQuery = "SELECT ROUND(AVG(stars),1) AS average_stars FROM Reviews";
+                $reviewStars = $conn->query($starQuery);
+                        
+                $reviewCount = count($reviews);
+                $reviewStars = $reviewStars->fetch_assoc();
+                        
+                $averageStars = implode(',', $reviewStars);
+                
+                echo "<div class='ratings'><p class='pull-right'>$reviewCount Reviews</p>
+                <p>
+                <div class='stars starrr' style='float:left' contenteditable='false'  data-rating='".$averageStars."'></div>
+                </p>
+                <br/><br/
+                <p>
+                            $averageStars Stars
+                </p></div></div></div></div></div>"
+            ?> 
+    
 
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
             
     <div class="container">
         <div class="row" style="margin-top:18px; margin-top: 40px;">
+       <!-- <div class="row" style="margin-top:18px; margin-top: 40px;"> ->
             <div class="col-md-13">
 	<!--<div class="row" style="margin-top:40px;">
 		<div class="col-md-6">-->
@@ -228,13 +252,13 @@
                 if ($conn->connect_error) {
                      die("Connection failed: " . $conn->connect_error);
                 } 
-           	 
                     $text = "SELECT * FROM Reviews";
                     $result = $conn->query($text);
                     
                     if ($result->num_rows > 0) {
                         // output data of each row
-                       while($row = $result->fetch_assoc()){
+                        
+                        while($row = $result->fetch_assoc()){
                             $reviews[] = $row;
                         }
 
@@ -308,11 +332,3 @@
 </body>
 
 </html>
-        
-        
-        
-        
-        
-        
-        
-     

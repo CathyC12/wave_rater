@@ -202,7 +202,7 @@
                 
                 echo "<div class='ratings'><p class='pull-right'>$reviewCount Reviews</p>
                 <p>
-                <div class='stars starrr' style='float:left' contenteditable='false'  data-rating='".$averageStars."'></div>
+                <div class='stars starrr' style='float:left' contenteditable='false' data-rating='".$averageStars."'></div>
                 </p>
                 <br/><br/
                 <p>

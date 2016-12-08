@@ -33,7 +33,7 @@
 
     <title>Creative - Start Bootstrap Theme</title>
     
-        <!--Page tab at top -->
+    <!--Page tab at top -->
     <link rel="shortcut icon" href="assets/ico/logoicon16.png">
     
      <!-- Blue Font CSS for Nav Bar -->
@@ -96,7 +96,7 @@
  var starValue = 0;
  
     function checkInput(){
-        alert("We have just clicked on the star "+starValue);
+        alert("Thank you for your rating of "+starValue);
         document.getElementById("hiddenValue").value = starValue;
     }
     
@@ -130,6 +130,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="index.html#watersport">Water Sports</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="index.html#map">Beaches of Ireland</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="beach_list.php#contact">Contact</a>
@@ -167,32 +170,53 @@
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: The Velvet Strand, Portmarnock, Co. Dublin</p>
-                        <p>The Velvet Strand is a long sandy beach, approximately 5 km in length, consisting of a large sandy dune area. There are public toilets located at the northern end of the beach. Portmarnock is a haven for beach goers during the summer months, offering facilities like hotels, restaurants, fast food outlets and golf courses. </p>
+                        <p>Address: The Velvet Strand, Portmarnock, Co. Dubline</p>
+                         <p>The Velvet Strand is a long sandy beach, approximately 5 km in length, consisting of a large sandy dune area. There are public toilets located at the northern end of the beach. Portmarnock is a haven for beach goers during the summer months, offering facilities like hotels, restaurants, fast food outlets and golf courses. </p>
                         <p>This beach is lifeguard patrolled during the bathing season.</p>
                         <p>Along the beach there is a path which leads to Malahide and it is used by many people each day. It is a great way of exercising.</p>
                     </div>
-                    <div class="ratings">
-                        <p class="pull-right">3 reviews</p>
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            4.0 stars
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>               
-    </div>    
+                    
+            <!--Average star rating and amount of reviews -->
+            <?php
+                $conn = new mysqli("localhost", "root", "", "waverater");
+                // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                } 
+                        
+                $middleval = floor(($count-1)/2);
+                $query = "SELECT * FROM Reviews";
+                $review = $conn->query($query);
+            
+                while($row = $review->fetch_assoc()){
+                    $reviews[] = $row;
+                }
+                
+                $starQuery = "SELECT ROUND(AVG(stars),1) AS average_stars FROM Reviews";
+                $reviewStars = $conn->query($starQuery);
+                        
+                $reviewCount = count($reviews);
+                $reviewStars = $reviewStars->fetch_assoc();
+                        
+                $averageStars = implode(',', $reviewStars);
+                
+                echo "<div class='ratings'><p class='pull-right'>$reviewCount Reviews</p>
+                <p>
+                <div class='stars starrr' style='float:left' contenteditable='false'  data-rating='".$averageStars."'></div>
+                </p>
+                <br/><br/
+                <p>
+                            $averageStars Stars
+                </p></div></div></div></div></div>"
+            ?> 
+    
 
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
             
     <div class="container">
         <div class="row" style="margin-top:18px; margin-top: 40px;">
+       <!-- <div class="row" style="margin-top:18px; margin-top: 40px;"> ->
             <div class="col-md-13">
 	<!--<div class="row" style="margin-top:40px;">
 		<div class="col-md-6">-->
@@ -202,7 +226,7 @@
             </div>
             <div class="row" id="post-review-box" style="display:none;">
                 <div class="col-md-12">
-                    <h3 class="header">Please leave your review</h3>
+                    <h3 class="header">Please Leave Your Review</h3>
                     
                     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <textarea class="reviewtextarea" cols="5" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
@@ -228,12 +252,12 @@
                 if ($conn->connect_error) {
                      die("Connection failed: " . $conn->connect_error);
                 } 
-           	 
                     $text = "SELECT * FROM Reviews";
                     $result = $conn->query($text);
                     
                     if ($result->num_rows > 0) {
                         // output data of each row
+                        
                         while($row = $result->fetch_assoc()){
                             $reviews[] = $row;
                         }
