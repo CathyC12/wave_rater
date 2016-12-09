@@ -150,11 +150,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Jet Skiing</p>
                 <div class="list-group">
-                    <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
-                    <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
-                    <a href="beach_list_surf_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
+                     <a href="beach_list_jetskiing_lahinch.php" class="list-group-item active">Lahinch Beach, Co.Clare</a>
+                    <a href="beach_list_jetskiing_velvetstrand.php" class="list-group-item active">The Velvet Strand, Portmarnock, Co.Dublin</a>
+                    <a href="beach_list_jetskiing_tramore.php" class="list-group-item active">Tramore Beach, Co.Waterford</a>
                 </div>
             </div>
             
@@ -163,17 +163,17 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/inishbofin.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/lahinch.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">East End Beach, Inishbofin</a>
+                        <h4><a href="#">Lahinch Beach, County Clare</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: East End Beach, Inishbofin</p>
-                        <p>Travel back in time with a trip to Inishbofin. Make for East End, a sheltered beach in a horseshoe bay with views back to Mayo and Galway.</p>
-                        <p>Its clear calm waters are great for kids to practice the doggy paddle, puttering about in a kayak with a mackerel line, or just floating on your back and counting the clouds.</p>
-                        
+                        <p>Address: Ennistymon Rd, Dough, Lahinch, Co. Clare</p>
+                        <p>Lahinch Beach is located a short drive from the Cliffs of Moher and is therefore very popular with locals and tourists alike. The flooding tide makes it ideal for surfing, sea kayaking and kite surfing and there are a few surfing schools in the local area. Lahinch is a popular resort town with many restaurants and accommodation. </p>
+                        <p>The beach is lifeguarded during the bathing season and more information can be found on the noticeboard located at the beach.</p>
+                        <p>This beach has received the International Blue Flag award for 2016.</p>
                     </div>
       
             <!--Average star rating and amount of reviews -->
@@ -313,7 +313,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Galway.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Ennistimon.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);
@@ -335,3 +335,4 @@
 </body>
 
 </html>
+        

@@ -314,7 +314,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/CA/Los_angeles.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Galway.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);

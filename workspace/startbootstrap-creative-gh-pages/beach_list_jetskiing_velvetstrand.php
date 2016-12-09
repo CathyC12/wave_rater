@@ -31,7 +31,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Beach List</title>
+    <title>Creative - Start Bootstrap Theme</title>
     
     <!--Page tab at top -->
     <link rel="shortcut icon" href="assets/ico/logoicon16.png">
@@ -150,11 +150,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Jet Skiing</p>
                 <div class="list-group">
-                    <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
-                    <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
-                    <a href="beach_list_surf_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
+                      <a href="beach_list_jetskiing_lahinch.php" class="list-group-item active">Lahinch Beach, Co.Clare</a>
+                    <a href="beach_list_jetskiing_velvetstrand.php" class="list-group-item active">The Velvet Strand, Portmarnock, Co.Dublin</a>
+                    <a href="beach_list_jetskiing_tramore.php" class="list-group-item active">Tramore Beach, Co.Waterford</a>
                 </div>
             </div>
             
@@ -163,19 +163,19 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/inishbofin.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/velvetstrand.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">East End Beach, Inishbofin</a>
+                        <h4><a href="#">The Velvet Strand, Portmarnock, Co. Dublin</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: East End Beach, Inishbofin</p>
-                        <p>Travel back in time with a trip to Inishbofin. Make for East End, a sheltered beach in a horseshoe bay with views back to Mayo and Galway.</p>
-                        <p>Its clear calm waters are great for kids to practice the doggy paddle, puttering about in a kayak with a mackerel line, or just floating on your back and counting the clouds.</p>
-                        
+                        <p>Address: The Velvet Strand, Portmarnock, Co. Dubline</p>
+                         <p>The Velvet Strand is a long sandy beach, approximately 5 km in length, consisting of a large sandy dune area. There are public toilets located at the northern end of the beach. Portmarnock is a haven for beach goers during the summer months, offering facilities like hotels, restaurants, fast food outlets and golf courses. </p>
+                        <p>This beach is lifeguard patrolled during the bathing season.</p>
+                        <p>Along the beach there is a path which leads to Malahide and it is used by many people each day. It is a great way of exercising.</p>
                     </div>
-      
+                    
             <!--Average star rating and amount of reviews -->
             <?php
                 $conn = new mysqli("localhost", "root", "", "waverater");
@@ -202,7 +202,7 @@
                 
                 echo "<div class='ratings'><p class='pull-right'>$reviewCount Reviews</p>
                 <p>
-                <div class='stars starrr' style='float:left' contenteditable='false' disabled='disabled' data-rating='".$averageStars."'></div>
+                <div class='stars starrr' style='float:left' contenteditable='false'  data-rating='".$averageStars."'></div>
                 </p>
                 <br/><br/
                 <p>
@@ -213,7 +213,7 @@
 
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
-  
+            
    <div class="container" >
        <div class="padding">
         <div class="row" style="margin-top:18px; margin-top: 40px;"> 
@@ -247,7 +247,6 @@
                 </div>
             </div>
         </div> 
-        
            	 <?php
 
            	    $conn = new mysqli("localhost", "root", "", "waverater");
@@ -313,7 +312,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Galway.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Portmarnock.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);
@@ -335,3 +334,4 @@
 </body>
 
 </html>
+        

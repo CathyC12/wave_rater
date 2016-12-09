@@ -150,7 +150,7 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Snorkling</p>
                 <div class="list-group">
                     <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
                     <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
@@ -313,7 +313,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Galway.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Meenlaragh.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);

@@ -150,11 +150,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Canoeing</p>
                 <div class="list-group">
-                    <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
-                    <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
-                    <a href="beach_list_surf_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
+                    <a href="beach_list_canoeing_derrynane.php" class="list-group-item active">Derrynane Harbour, Co. Kerry</a>
+                    <a href="beach_list_canoeing_ardmore.php" class="list-group-item active">Island Hopping, Ardmore, Co. Galway</a>
+                    <a href="beach_list_canoeing_barrow.php" class="list-group-item active">The Barrow River, Co. Kilkenny & Carlow</a>
                 </div>
             </div>
             
@@ -163,16 +163,17 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/inishbofin.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/derrynane.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">East End Beach, Inishbofin</a>
+                        <h4><a href="#">Derrynane Harbour, Co. Kerry</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: East End Beach, Inishbofin</p>
-                        <p>Travel back in time with a trip to Inishbofin. Make for East End, a sheltered beach in a horseshoe bay with views back to Mayo and Galway.</p>
-                        <p>Its clear calm waters are great for kids to practice the doggy paddle, puttering about in a kayak with a mackerel line, or just floating on your back and counting the clouds.</p>
+                        <p>Address: Derrynane Harbour, Co. Kerryl</p>
+                        <p>As you reflect in life on the experiences that have nourished your soul, that day you spent with your family canoeing down the Barrow river in County Carlow will always be a treasured travel memory.</p>
+                        <p>From the water, the scenery and views are even more spectacular.</p>
+                        
                         
                     </div>
       
@@ -313,7 +314,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Galway.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Caherdaniel.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);

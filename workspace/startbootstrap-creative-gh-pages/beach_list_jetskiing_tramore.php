@@ -31,7 +31,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Beach List</title>
+    <title>Creative - Start Bootstrap Theme</title>
     
     <!--Page tab at top -->
     <link rel="shortcut icon" href="assets/ico/logoicon16.png">
@@ -150,11 +150,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Jet Skiing</p>
                 <div class="list-group">
-                    <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
-                    <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
-                    <a href="beach_list_surf_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
+                    <a href="beach_list_jetskiing_lahinch.php" class="list-group-item active">Lahinch Beach, Co.Clare</a>
+                    <a href="beach_list_jetskiing_velvetstrand.php" class="list-group-item active">The Velvet Strand, Portmarnock, Co.Dublin</a>
+                    <a href="beach_list_jetskiing_tramore.php" class="list-group-item active">Tramore Beach, Co.Waterford</a>
                 </div>
             </div>
             
@@ -162,20 +162,20 @@
 
             <div class="col-md-9">
 
-                <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/inishbofin.jpg" alt="">
+               <div class="thumbnail">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/tramore.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">East End Beach, Inishbofin</a>
+                        <h4><a href="#">Tramore Beach, Co.Waterford</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: East End Beach, Inishbofin</p>
-                        <p>Travel back in time with a trip to Inishbofin. Make for East End, a sheltered beach in a horseshoe bay with views back to Mayo and Galway.</p>
-                        <p>Its clear calm waters are great for kids to practice the doggy paddle, puttering about in a kayak with a mackerel line, or just floating on your back and counting the clouds.</p>
-                        
+                        <p>Address: Tramore, Co. Waterford</p>
+                        <p>Tramore is a seaside town in the southeast, 13 kilometres south of Waterford city, and is one of Ireland's most popular holiday resorts. Situated on a hillside overlooking Tramore Bay,it has a fine promenade and a sandy bathing beach 5 kilometres long. The town is situated on the north-western corner of Tramore Bay on a hill that slopes down to the strand and divides the bay</p>
+                        <p>Tramore is a popular surfer's destination. Behind the spit lies the tidal lagoon known as the Back Strand.p>
+                        <p>This beach is lifeguard patrolled during the bathing season.</p>
                     </div>
-      
+                    
             <!--Average star rating and amount of reviews -->
             <?php
                 $conn = new mysqli("localhost", "root", "", "waverater");
@@ -202,7 +202,7 @@
                 
                 echo "<div class='ratings'><p class='pull-right'>$reviewCount Reviews</p>
                 <p>
-                <div class='stars starrr' style='float:left' contenteditable='false' disabled='disabled' data-rating='".$averageStars."'></div>
+                <div class='stars starrr' style='float:left' contenteditable='false'  data-rating='".$averageStars."'></div>
                 </p>
                 <br/><br/
                 <p>
@@ -213,8 +213,8 @@
 
     
     <!--REVIEW NEW ALICE ADDED 01/12/16 -->
-  
-   <div class="container" >
+            
+    <div class="container" >
        <div class="padding">
         <div class="row" style="margin-top:18px; margin-top: 40px;"> 
             <div class="col-md-11.7">
@@ -247,7 +247,6 @@
                 </div>
             </div>
         </div> 
-        
            	 <?php
 
            	    $conn = new mysqli("localhost", "root", "", "waverater");
@@ -313,7 +312,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Galway.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Dunmore.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);

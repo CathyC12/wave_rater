@@ -31,7 +31,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>CBeach List</title>
     
     <!--Page tab at top -->
     <link rel="shortcut icon" href="assets/ico/logoicon16.png">
@@ -312,7 +312,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/CA/Los_angeles.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Portmarnock.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);

@@ -150,11 +150,11 @@
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Kite Surfing</p>
+                <p class="lead">Snorkling</p>
                 <div class="list-group">
-                    <a href="beach_list_kite_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
-                    <a href="beach_list_kite_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
-                    <a href="beach_list_surf_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
+                       <a href="beach_list_snorkling_dogsbay.php" class="list-group-item active">Dog's Bay, Co.Galway</a>
+                    <a href="beach_list_snorkling_inchdoney.php" class="list-group-item active">Inchdoney, Co. Cork</a>
+                    <a href="beach_list_snorkling_inishbofin.php" class="list-group-item active">East End Beach, Inishbofin</a>
                 </div>
             </div>
             
@@ -163,17 +163,17 @@
             <div class="col-md-9">
 
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/portfolio/thumbnails/inishbofin.jpg" alt="">
+                    <img class="img-responsive" src="img/portfolio/thumbnails/dogsbay.jpg" alt="">
                     <div class="caption-full">
-                        <h4><a href="#">East End Beach, Inishbofin</a>
+                        <h4><a href="#">Dog's Bay, Co.Galway</a>
                         </h4>
                         <div id="weather"></div>
                         <p>Current Temp: <span id="temp"></span></p>
                         <p>Current Wind: <span id="wind"></span></p>
-                        <p>Address: East End Beach, Inishbofin</p>
-                        <p>Travel back in time with a trip to Inishbofin. Make for East End, a sheltered beach in a horseshoe bay with views back to Mayo and Galway.</p>
-                        <p>Its clear calm waters are great for kids to practice the doggy paddle, puttering about in a kayak with a mackerel line, or just floating on your back and counting the clouds.</p>
-                        
+                        <p>Address: Dog's Bay, Co.Galway</p>
+                        <p>Dogs Bay is a spectacular horseshoe shaped bay with more than a mile long stretch of white sandy beach.</p>
+                        <p>The beach is situated only 2 miles outside the picturesque village of Roundstone in Connemara, Co. Galway.</p>
+                        <p>Dogs Bay and Gurteen Bay make up one of the finest stretches of coastline in Connemara, offering uncompromising views of Errisbeg and the surrounding countryside.</p>
                     </div>
       
             <!--Average star rating and amount of reviews -->
@@ -313,7 +313,7 @@
     
     <script>
                         var weather = new XMLHttpRequest();
-                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Galway.json", false);
+                        weather.open("GET", "https://api.wunderground.com/api/626f24c8c474bb7e/conditions/q/Ireland/Mace Head.json", false);
                         weather.send(null);
 
                         var r = JSON.parse(weather.response);
